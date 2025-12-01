@@ -7,6 +7,7 @@
   padding: 32px 16px 16px;
   border-radius: 5px;
   box-sizing: border-box;
+  transition: transform 0.3s;
 
   &__image {
     width: 160px;
@@ -20,6 +21,11 @@
     height: 54px;
     flex-direction: column;
     margin-bottom: 16px;
+    transition: color 0.3s;
+
+    :hover {
+      color: $title-color;
+    }
   }
 
   &__name {
@@ -84,13 +90,11 @@
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
-
-    // align-items: center;
-
     width: 100%;
     text-decoration: none;
     color: $white;
     border: 1px solid transparent;
+    transition: all 0.3s;
 
     &:hover {
       color: $blue-accent;
@@ -98,5 +102,9 @@
       border: 1px solid $blue-accent;
       cursor: pointer;
     }
+  }
+
+  &:hover {
+    transform: scale(1.2);
   }
 }

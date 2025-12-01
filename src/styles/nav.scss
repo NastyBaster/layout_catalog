@@ -26,6 +26,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $main-accent;
+    transition: color 0.3s;
 
     &:hover {
       color: $blue-accent;
