@@ -32,9 +32,9 @@
       color: $blue-accent;
     }
 
-    &--is-active {
+    &.is-active {
       position: relative;
-      color: $blue-accent;
+      color: $main-accent;
 
       &::after {
         content: '';
@@ -44,6 +44,7 @@
         height: 4px;
         bottom: 0;
         border-radius: 8px;
+        pointer-events: none;
       }
     }
   }

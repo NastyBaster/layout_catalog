@@ -106,5 +106,7 @@
 
   &:hover {
     transform: scale(1.2);
+    transform-origin: center;
+    z-index: 1;
   }
 }
